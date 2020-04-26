@@ -3,7 +3,7 @@ RUN apt update && apt install -y \
     tor \
     tesseract-ocr \
     tesseract-ocr-rus \
-    unrar-free
+    libarchive
 COPY torrc.default /etc/tor/torrc.default
 RUN pip install poetry
 WORKDIR /opt/ocr-bot
